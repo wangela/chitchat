@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		5F47231C4E430670D75A56D9 /* Pods_chitchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5A51F02CB639613B2410D9 /* Pods_chitchat.framework */; };
 		776A16F61F7C90CD003E2E79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A16F51F7C90CD003E2E79 /* AppDelegate.swift */; };
-		776A16F81F7C90CD003E2E79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A16F71F7C90CD003E2E79 /* ViewController.swift */; };
 		776A16FB1F7C90CD003E2E79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776A16F91F7C90CD003E2E79 /* Main.storyboard */; };
 		776A16FD1F7C90CD003E2E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776A16FC1F7C90CD003E2E79 /* Assets.xcassets */; };
 		776A17001F7C90CD003E2E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776A16FE1F7C90CD003E2E79 /* LaunchScreen.storyboard */; };
+		77FDA4031F7C95000004EAA0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FDA4021F7C95000004EAA0 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A93B3E3B36D3C70671DC9F5 /* Pods-chitchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chitchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chitchat/Pods-chitchat.debug.xcconfig"; sourceTree = "<group>"; };
 		776A16F21F7C90CD003E2E79 /* chitchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chitchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776A16F51F7C90CD003E2E79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		776A16F71F7C90CD003E2E79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		776A16FA1F7C90CD003E2E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		776A16FC1F7C90CD003E2E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		776A16FF1F7C90CD003E2E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		776A17011F7C90CD003E2E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77FDA4021F7C95000004EAA0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = /Users/wangela/chitchat/chitchat/ViewControllers/LoginViewController.swift; sourceTree = "<absolute>"; };
 		7D1C852640C44034760F0972 /* Pods-chitchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chitchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-chitchat/Pods-chitchat.release.xcconfig"; sourceTree = "<group>"; };
 		EA5A51F02CB639613B2410D9 /* Pods_chitchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chitchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,14 +69,22 @@
 		776A16F41F7C90CD003E2E79 /* chitchat */ = {
 			isa = PBXGroup;
 			children = (
+				77FDA4041F7C95030004EAA0 /* ViewControllers */,
 				776A16F51F7C90CD003E2E79 /* AppDelegate.swift */,
-				776A16F71F7C90CD003E2E79 /* ViewController.swift */,
 				776A16F91F7C90CD003E2E79 /* Main.storyboard */,
 				776A16FC1F7C90CD003E2E79 /* Assets.xcassets */,
 				776A16FE1F7C90CD003E2E79 /* LaunchScreen.storyboard */,
 				776A17011F7C90CD003E2E79 /* Info.plist */,
 			);
 			path = chitchat;
+			sourceTree = "<group>";
+		};
+		77FDA4041F7C95030004EAA0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77FDA4021F7C95000004EAA0 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		7C56CAED801359AC758990AB /* Pods */ = {
@@ -219,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				776A16F81F7C90CD003E2E79 /* ViewController.swift in Sources */,
+				77FDA4031F7C95000004EAA0 /* LoginViewController.swift in Sources */,
 				776A16F61F7C90CD003E2E79 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
