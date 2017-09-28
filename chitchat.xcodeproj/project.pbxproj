@@ -14,7 +14,6 @@
 		776A17001F7C90CD003E2E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776A16FE1F7C90CD003E2E79 /* LaunchScreen.storyboard */; };
 		77A48D8C1F7C9C2F002ABA63 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A48D8B1F7C9C2F002ABA63 /* ChatViewController.swift */; };
 		77A48D8F1F7C9C6E002ABA63 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A48D8E1F7C9C6E002ABA63 /* ChatCell.swift */; };
-		77A48D921F7CA139002ABA63 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A48D911F7CA139002ABA63 /* Message.swift */; };
 		77FDA4031F7C95000004EAA0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FDA4021F7C95000004EAA0 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		776A17011F7C90CD003E2E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A48D8B1F7C9C2F002ABA63 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		77A48D8E1F7C9C6E002ABA63 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
-		77A48D911F7CA139002ABA63 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		77FDA4021F7C95000004EAA0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = /Users/wangela/chitchat/chitchat/ViewControllers/LoginViewController.swift; sourceTree = "<absolute>"; };
 		7D1C852640C44034760F0972 /* Pods-chitchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chitchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-chitchat/Pods-chitchat.release.xcconfig"; sourceTree = "<group>"; };
 		EA5A51F02CB639613B2410D9 /* Pods_chitchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chitchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +96,6 @@
 		77A48D901F7CA118002ABA63 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				77A48D911F7CA139002ABA63 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,13 +229,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-chitchat/Pods-chitchat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts-Swift/BoltsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseLiveQuery/ParseLiveQuery.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BoltsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseLiveQuery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -254,7 +257,6 @@
 			files = (
 				77FDA4031F7C95000004EAA0 /* LoginViewController.swift in Sources */,
 				77A48D8F1F7C9C6E002ABA63 /* ChatCell.swift in Sources */,
-				77A48D921F7CA139002ABA63 /* Message.swift in Sources */,
 				77A48D8C1F7C9C2F002ABA63 /* ChatViewController.swift in Sources */,
 				776A16F61F7C90CD003E2E79 /* AppDelegate.swift in Sources */,
 			);

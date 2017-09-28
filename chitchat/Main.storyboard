@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -129,26 +130,23 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chat text can be a long message depending on how verbose you are or your chat partner is." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYu-ch-Kq8">
-                                                    <rect key="frame" x="72" y="38" width="295" height="59"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat text can be a long message depending on how verbose you are or your chat partner is." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYu-ch-Kq8">
+                                                    <rect key="frame" x="12" y="12" width="351" height="93.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRt-IV-lGp">
-                                                    <rect key="frame" x="72" y="8" width="82" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3b-6w-02x">
-                                                    <rect key="frame" x="16" y="15" width="40" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NYu-ch-Kq8" firstAttribute="leading" secondItem="lLK-9A-mbR" secondAttribute="leading" constant="12" id="Iep-6V-gVa"/>
+                                                <constraint firstItem="NYu-ch-Kq8" firstAttribute="top" secondItem="lLK-9A-mbR" secondAttribute="top" constant="12" id="L3Q-Or-0kf"/>
+                                                <constraint firstAttribute="bottom" secondItem="NYu-ch-Kq8" secondAttribute="bottom" constant="12" id="UwK-mS-Jee"/>
+                                                <constraint firstAttribute="trailing" secondItem="NYu-ch-Kq8" secondAttribute="trailing" constant="12" id="gIN-gF-5pV"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="NYu-ch-Kq8" id="S0w-39-CTY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -168,6 +166,7 @@
                     <navigationItem key="navigationItem" id="aYi-aa-tay"/>
                     <connections>
                         <outlet property="messageTextField" destination="rA4-od-Zb7" id="Vxq-qv-a8E"/>
+                        <outlet property="messagesTableView" destination="g93-ts-Sjm" id="126-in-ZO4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ZL-8v-a5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
