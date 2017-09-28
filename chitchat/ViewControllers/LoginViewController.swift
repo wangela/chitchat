@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onSignupButton(_ sender: Any) {
+    @IBAction func onSignup(_ sender: Any) {
         // initialize a user object
         let newUser = PFUser()
         
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func onLoginButton(_ sender: Any) {
+    @IBAction func onLogin(_ sender: Any) {
         let username = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         

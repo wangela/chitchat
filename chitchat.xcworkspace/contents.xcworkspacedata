@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/wangela/chitchat/chitchat/LoginViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:chitchat.xcodeproj">
    </FileRef>
    <FileRef
