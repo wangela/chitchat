@@ -26,7 +26,7 @@ class ChatViewController: UIViewController {
         override func viewDidLoad() {
             var chatQuery: PFQuery<Message> {
                 return (Message.query()!
-                    .whereKeyExists("text")
+                    .whereKeyExists("text"))
                     //.order(byAscending: "createdAt")) as! PFQuery<Armor>
             }
             client = ParseLiveQuery.Client()
